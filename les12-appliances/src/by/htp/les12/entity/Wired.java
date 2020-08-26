@@ -1,19 +1,18 @@
 package by.htp.les12.entity;
 
 public abstract class Wired extends Appliance {
-	private final int POWER_CONSUMPTION;
+	private final int powerConsumption;
 	
 	public Wired(int price, int weight, int powerConsumption) {
 		super(price, weight);
-		this.POWER_CONSUMPTION = powerConsumption;
+		this.powerConsumption = powerConsumption;
 	}
 	
 	public int getPowerConsumption() {
-		return this.POWER_CONSUMPTION;
+		return this.powerConsumption;
 	}
 	
-	@Override
-	public String toString() {
+	public String getInfo() {
 		return "Wired with PRICE = " + this.getPrice();
 	}
 }

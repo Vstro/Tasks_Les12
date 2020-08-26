@@ -1,19 +1,19 @@
 package by.htp.les12.entity;
 
 public class Laptop extends Digital {
-	private final int SYSTEM_MEMORY;
+	private final int systemMemory;
 	private final double CPU;
 	private final String OS;
 	
 	public Laptop(int price, int weight, int batteryCapacity, int displayInches, int memoryROM, int systemMemory, double CPU, String OS) {
 		super(price, weight, batteryCapacity, displayInches, memoryROM);
-		this.SYSTEM_MEMORY = systemMemory;
+		this.systemMemory = systemMemory;
 		this.CPU = CPU;
 		this.OS = OS;
 	}
 
 	public int getSystemMemory() {
-		return SYSTEM_MEMORY;
+		return systemMemory;
 	}
 
 	public double getCPU() {
@@ -24,8 +24,7 @@ public class Laptop extends Digital {
 		return OS;
 	}
 	
-	@Override
-	public String toString() {
+	public String getInfo() {
 		return "Laptop with PRICE = " + this.getPrice();
 	}
 }

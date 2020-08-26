@@ -1,31 +1,30 @@
 package by.htp.les12.entity;
 
 public abstract class BoxShaped extends Wired {
-	private final int DEPTH;
-	private final int HEIGHT;
-	private final int WIDTH;
+	private final int Depth;
+	private final int Height;
+	private final int Width;
 	
 	public BoxShaped(int price, int weight, int powerConsumption, int depth, int height, int width) {
 		super(price, weight, powerConsumption);
-		this.DEPTH = depth;
-		this.HEIGHT = height;
-		this.WIDTH = width;
+		this.Depth = depth;
+		this.Height = height;
+		this.Width = width;
 	}
 
 	public int getDepth() {
-		return DEPTH;
+		return Depth;
 	}
 
 	public int getHeight() {
-		return HEIGHT;
+		return Height;
 	}
 
 	public int getWidth() {
-		return WIDTH;
+		return Width;
 	}
 	
-	@Override
-	public String toString() {
+	public String getInfo() {
 		return "BoxShaped with PRICE = " + this.getPrice();
 	}
 }

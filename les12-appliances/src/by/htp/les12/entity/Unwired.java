@@ -1,19 +1,18 @@
 package by.htp.les12.entity;
 
 public abstract class Unwired extends Appliance {
-	private final int BATTERY_CAPACITY;
+	private final int batteryCapacity;
 	
 	public Unwired(int price, int weight, int batteryCapacity) {
 		super(price, weight);
-		this.BATTERY_CAPACITY = batteryCapacity;
+		this.batteryCapacity = batteryCapacity;
 	}
 	
 	public int getBatteryCapacity() {
-		return this.BATTERY_CAPACITY;
+		return this.batteryCapacity;
 	}
 	
-	@Override
-	public String toString() {
+	public String getInfo() {
 		return "Unwired with PRICE = " + this.getPrice();
 	}
 }

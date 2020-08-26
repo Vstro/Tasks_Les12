@@ -1,24 +1,21 @@
 package by.htp.les12.entity;
 
 public abstract class Appliance {
-	private final int WEIGHT;
-	private final int PRICE;
+	private final int Weight;
+	private final int Price;
 	
 	public Appliance(int price, int weight) {
-		this.WEIGHT = weight;
-		this.PRICE = price;
+		this.Weight = weight;
+		this.Price = price;
 	}
 
 	public int getWeight() {
-		return WEIGHT;
+		return Weight;
 	}
 	
 	public int getPrice() {
-		return PRICE;
+		return Price;
 	}
-
-	@Override
-	public String toString() {
-		return "Appliance with PRICE = " + PRICE;
-	}
+	
+	public abstract String getInfo();
 }
